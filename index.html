@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookshelfApps</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/icon.png" />
+  </head>
+  <body
+    style="
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 30px;
+    "
+  >
+    <h1 style="display: flex; align-items: center; justify-content: center">
+      BookshelfApps
+    </h1>
+
+    <form
+      id="addBookForm"
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 20px;
+        border: 1px solid black;
+        border-radius: 20px;
+        padding: 10px;
+        width: 50%;
+      "
+    >
+      <label for="title">Judul:</label>
+      <input
+        type="text"
+        id="title"
+        style="
+          border-radius: 4px;
+          border: 1px solid black;
+          margin-bottom: 5px;
+          padding: 4px;
+        "
+      />
+
+      <label for="author">Penulis:</label>
+      <input
+        type="text"
+        id="author"
+        style="
+          border-radius: 4px;
+          border: 1px solid black;
+          margin-bottom: 5px;
+          padding: 4px;
+        "
+      />
+
+      <label for="date">Tahun Rilis:</label>
+      <input
+        maxlength="4"
+        type="number"
+        id="date"
+        style="
+          border-radius: 4px;
+          border: 1px solid black;
+          margin-bottom: 5px;
+          padding: 4px;
+        "
+      />
+      <div>
+        <label for="status">Sudah dibaca</label>
+        <input type="checkbox" name="" id="status" />
+      </div>
+
+      <button type="submit" onclick="addBook()" class="basic-btn">
+        Tambah Buku
+      </button>
+    </form>
+
+    <h1 style="display: flex; align-items: center; justify-content: center">
+      Rak Buku
+    </h1>
+    <div
+      style="
+        border: 1px solid black;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 20px;
+        width: 50%;
+      "
+    >
+      <h1 style="display: flex; align-items: center; justify-content: center">
+        Belum dibaca
+      </h1>
+      <div
+        id="unreadBook"
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: last;
+          justify-content: center;
+        "
+      ></div>
+    </div>
+    <div
+      style="
+        border: 1px solid black;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 20px;
+        width: 50%;
+      "
+    >
+      <h1 style="display: flex; align-items: center; justify-content: center">
+        Sudah dibaca
+      </h1>
+      <div
+        id="readBook"
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: last;
+          justify-content: center;
+        "
+      ></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

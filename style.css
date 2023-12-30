@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+h1 {
+  color: cornflowerblue;
+}
+
+.judul {
+  font-size: 40px;
+}
+
+.creator {
+  font-weight: bold;
+}
+
+.tahun {
+  margin-top: 4px;
+  font-weight: bold;
+}
+
+.basic-btn {
+  background-color: cornflowerblue;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  padding: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.del-btn {
+  background-color: red;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  padding: 8px;
+  cursor: pointer;
+  margin-top: 5px;
+  width: 20%;
+  font-weight: bold;
+}
+
+.cek-btn {
+  background-color: green;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  padding: 8px;
+  cursor: pointer;
+  margin-top: 5px;
+  width: 20%;
+  font-weight: bold;
+}

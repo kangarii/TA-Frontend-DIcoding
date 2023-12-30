@@ -1,1 +1,1 @@
-# TA-Fronend Dicoding
+# TA-Frontend Dicoding
